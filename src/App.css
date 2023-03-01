@@ -1,0 +1,827 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.NavBar {
+  height: 70px;
+  box-shadow: 0px 2px 8px rgba(46, 92, 255, 0.1);
+}
+
+nav {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+}
+nav h1 {
+  font-size: 20px;
+  color: #2e5cff;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+nav .Btn1 {
+  font-family: "Inter", sans-serif;
+  color: #2e5cff;
+  font-size: 12px;
+  font-weight: 700;
+  width: 70px;
+  height: 38px;
+  background-color: transparent;
+  border: 1px solid #2e5cff;
+  border-radius: 12px;
+}
+nav .Btn2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  width: 150px;
+  height: 38px;
+  background-color: #2e5cff;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Hero Section */
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Texts h1 {
+  margin-top: 50px;
+  font-family: "Poppins" sans-serif;
+  color: #172e80;
+  width: 400px;
+  font-size: 50px;
+}
+.Texts P {
+  color: #777777;
+  width: 390px;
+  font-size: 20px;
+}
+.Picture {
+  margin-top: 50px;
+  width: 600px;
+}
+
+.SignBtn {
+  margin-top: 30px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  font-size: 13px;
+  background-color: #2e5cff;
+  height: 40px;
+  width: 150px;
+}
+.twoBtns {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin-top: 40px;
+}
+
+.BtnG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+}
+.BtnG img {
+  margin-right: 5px;
+}
+.BtnA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+.BtnA img {
+  margin-right: 5px;
+}
+
+/* Brands */
+.Brands {
+  width: 100vw;
+  height: 100px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+/* Active User Trust */
+.UserTrust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+}
+.UserTrust h1 {
+  width: 600px;
+  font-size: 50px;
+  color: #172e80;
+}
+.UserTrust h1 span {
+  color: #2e5cff;
+}
+
+/* Our Services */
+.Services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  margin-top: 150px;
+  background-color: #fbfbfb;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 150px;
+}
+.Services h3 {
+  font-weight: 200;
+  padding-top: 50px;
+  font-size: 20px;
+}
+.Services h1 {
+  color: #172e80;
+  font-size: 40px;
+  font-weight: 500;
+}
+.Services p {
+  text-align: center;
+  width: 600px;
+  font-size: 15px;
+  color: #777777;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.ServiceBoxes {
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+}
+.serviceBox1 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 20px;
+  padding: 15px;
+  justify-content: center;
+  text-align: left;
+  background-color: #f4f6ff;
+}
+.serviceBox1 h2 {
+  font-size: 30px;
+  color: #2e5cff;
+}
+.serviceBox1 p {
+  text-align: start;
+  width: 300px;
+  font-size: 15px;
+  color: #777777;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.serviceBox1 a {
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
+  text-decoration: none;
+  color: #2e5cff;
+}
+.serviceBox2 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 20px;
+  padding: 15px;
+  justify-content: center;
+  text-align: left;
+  background-color: #fef7f1;
+}
+.serviceBox2 h2 {
+  font-size: 30px;
+  color: #2e5cff;
+}
+.serviceBox2 p {
+  text-align: start;
+  width: 300px;
+  font-size: 15px;
+  color: #777777;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.serviceBox2 a {
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
+  text-decoration: none;
+  color: #2e5cff;
+}
+
+.serviceImg {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceImg img {
+  width: 200px;
+}
+
+/* Download app */
+
+.DownloadApp {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 250px;
+}
+.DownloadApp img {
+  width: 250px;
+  margin-bottom: 100px;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  margin-top: -150px;
+}
+.guide h1 {
+  width: 550px;
+  font-size: 35px;
+  line-height: 55px;
+  color: #172e80;
+}
+.NoLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.NoLine h3 {
+  color: #2e5cff;
+  margin-bottom: 20px;
+}
+.line {
+  width: 2px;
+  height: 70px;
+  background-color: #2e5cff;
+}
+.ListRow {
+  margin-top: 20px;
+  text-align: start;
+  display: flex;
+  margin-bottom: 20px;
+}
+.ListColumn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+}
+.ListColumn h3 {
+  font-size: 20px;
+  color: #172e80;
+}
+.ListColumn p {
+  padding-top: 10px;
+  width: 300px;
+  font-size: 15px;
+  color: #777777;
+}
+
+.CenterButton {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CenterButton button {
+  width: 150px;
+  height: 40px;
+  background-color: #2e5cff;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 16px;
+}
+/* Faqs */
+.FaqsRow {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FaqsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 600px;
+  background-color: #2e5cff;
+}
+.Faqs {
+  width: 500px;
+  height: 500px;
+  margin-top: 100px;
+}
+.Faqs h1 {
+  font-size: 60px;
+  color: white;
+}
+.faqsBox {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  width: 450px;
+  height: 45px;
+  color: white;
+  font-size: 15px;
+}
+.faqsBox img {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.Pana {
+  width: 45%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbfb;
+}
+.Pana img {
+  width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    overflow-x: hidden;
+  }
+  .NavBar {
+    width: 100vw;
+    height: 70px;
+    box-shadow: 0px 2px 8px rgba(46, 92, 255, 0.1);
+  }
+
+  nav {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav h1 {
+    font-size: 20px;
+    color: #2e5cff;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+
+  nav .Btn1 {
+    font-family: "Inter", sans-serif;
+    color: #2e5cff;
+    font-size: 12px;
+    font-weight: 700;
+    width: 70px;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #2e5cff;
+    border-radius: 12px;
+    margin-left: 100px;
+  }
+  nav .Btn2 {
+    display: none;
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 150px;
+    height: 38px;
+    background-color: #2e5cff;
+    border: none;
+    border-radius: 12px;
+  }
+
+  /* Hero Section */
+  .Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .Texts h1 {
+    margin-top: 40px;
+    font-family: "Poppins" sans-serif;
+    color: #172e80;
+    width: 350px;
+    font-size: 40px;
+  }
+  .Texts P {
+    color: #777777;
+    width: 350px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .Picture {
+    display: flex;
+    margin-top: 50px;
+    width: 350px;
+  }
+
+  .SignBtn {
+    margin-top: 30px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    font-size: 13px;
+    background-color: #2e5cff;
+    height: 50px;
+    width: 200px;
+  }
+  .twoBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  .BtnG {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+  }
+  .BtnG img {
+    margin-right: 5px;
+  }
+  .BtnA {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    margin-left: 0px;
+  }
+  .BtnA img {
+    margin-right: 5px;
+  }
+
+  /* Brands */
+  .Brands {
+    height: 100px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+  }
+  .Brands img {
+    width: 100px;
+    margin-left: 50px;
+  }
+  /* Active User Trust */
+  .UserTrust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .UserTrust h1 {
+    width: 600px;
+    font-size: 40px;
+    color: #172e80;
+  }
+  .UserTrust h1 span {
+    color: #2e5cff;
+  }
+
+  /* Our Services */
+  .Services {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1700px;
+    margin-top: 100px;
+    background-color: #fbfbfb;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 100px;
+  }
+  .Services h3 {
+    font-weight: 200;
+    padding-top: 0px;
+    font-size: 20px;
+  }
+  .Services h1 {
+    color: #172e80;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .Services p {
+    text-align: center;
+    width: 300px;
+    font-size: 15px;
+    color: #777777;
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+  .ServiceBoxes {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .serviceBox1 {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    justify-content: center;
+    text-align: left;
+    background-color: #f4f6ff;
+  }
+  .serviceBox1 h2 {
+    font-size: 30px;
+    color: #2e5cff;
+  }
+  .serviceBox1 p {
+    text-align: start;
+    width: 300px;
+    font-size: 15px;
+    color: #777777;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .serviceBox1 a {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    text-decoration: none;
+    color: #2e5cff;
+  }
+  .serviceBox2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: left;
+    background-color: #fef7f1;
+  }
+  .serviceBox2 h2 {
+    font-size: 30px;
+    color: #2e5cff;
+  }
+  .serviceBox2 p {
+    text-align: start;
+    width: 300px;
+    font-size: 15px;
+    color: #777777;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .serviceBox2 a {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    text-decoration: none;
+    color: #2e5cff;
+  }
+
+  .serviceImg {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .serviceImg img {
+    width: 200px;
+  }
+
+  /* Download App */
+  .DownloadApp {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* height: 2000px; */
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 250px;
+  }
+  .DownloadApp img {
+    width: 300px;
+    height: 600px;
+    margin-bottom: 100px;
+  }
+
+  .guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .guide h1 {
+    width: 300px;
+    font-size: 30px;
+    line-height: 55px;
+    color: #172e80;
+  }
+  .NoLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .NoLine h3 {
+    color: #2e5cff;
+    margin-bottom: 20px;
+  }
+  .line {
+    width: 2px;
+    height: 70px;
+    background-color: #2e5cff;
+  }
+  .ListRow {
+    margin-top: 20px;
+    text-align: start;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .ListColumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+  }
+  .ListColumn h3 {
+    font-size: 20px;
+    color: #172e80;
+  }
+  .ListColumn p {
+    padding-top: 10px;
+    width: 300px;
+    font-size: 15px;
+    color: #777777;
+  }
+
+  .CenterButton {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .CenterButton button {
+    width: 150px;
+    height: 40px;
+    background-color: #2e5cff;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 16px;
+  }
+  /* Faqs */
+  .FaqsRow {
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .FaqsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-color: #2e5cff;
+  }
+  .Faqs {
+    width: 95%;
+    height: 500px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Faqs h1 {
+    font-size: 60px;
+    color: white;
+  }
+  .faqsBox {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 80vw;
+    height: 45px;
+    color: white;
+    font-size: 15px;
+  }
+  .faqsBox img {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .Pana {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbfb;
+  }
+  .Pana img {
+    width: 400px;
+    height: 400px;
+  }
+}
