@@ -3,6 +3,7 @@ import ActiveUserTrust from "../components/ActiveUserTrust";
 import Brands from "../components/Brands";
 import DownloadApp from "../components/DownloadApp";
 import Faqs from "../components/Faqs";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
@@ -21,6 +22,7 @@ function LandingPage() {
       <Faqs />
       <Testemonials />
       <Newsletter />
+      <Footer />
     </div>
   );
 }

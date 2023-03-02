@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .NavBar {
@@ -60,7 +64,9 @@ nav .Btn2 {
   border: none;
   border-radius: 12px;
 }
-
+.BUrger {
+  display: none;
+}
 /* Hero Section */
 .Hero {
   display: flex;
@@ -516,14 +522,57 @@ nav .Btn2 {
 .Btn2 {
   display: none;
 }
-
+/* Footer */
+.footerBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f6ff;
+}
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  height: 200px;
+}
+.FTcolumn h2 {
+  color: #172e80;
+}
+.FTcolumn p {
+  width: 300px;
+  color: #777777;
+  font-size: 15px;
+}
+.FTcolumn li {
+  font-size: 15px;
+  list-style: none;
+  color: #172e80;
+  margin-top: 15px;
+}
+.FTcolumn small {
+  font-size: 15px;
+  color: #172e80;
+}
+.CopyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #172e80;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.CopyRow p {
+  font-size: 15px;
+  font-weight: 500;
+}
 @media screen and (max-width: 1000px) {
   * {
     overflow-x: hidden;
   }
   .NavBar {
     width: 100vw;
-    height: 70px;
+    height: 60px;
     box-shadow: 0px 2px 8px rgba(46, 92, 255, 0.1);
   }
 
@@ -534,9 +583,10 @@ nav .Btn2 {
     padding-top: 15px;
     width: 100vw;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   nav h1 {
+    margin-left: 20px;
     font-size: 20px;
     color: #2e5cff;
   }
@@ -555,6 +605,39 @@ nav .Btn2 {
     color: black;
   }
 
+  .menu {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    cursor: pointer;
+    padding-right: 30px;
+  }
+  .box1 {
+    width: 30px;
+    height: 4px;
+    background-color: #4a8edc;
+    border-radius: 10px;
+  }
+  .box2 {
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 30px;
+    height: 4px;
+    background-color: #4adc7c;
+  }
+  .box3 {
+    width: 30px;
+    height: 4px;
+    background-color: #4a8edc;
+    border-radius: 10px;
+  }
+
   nav .Btn1 {
     font-family: "Inter", sans-serif;
     color: #2e5cff;
@@ -566,6 +649,7 @@ nav .Btn2 {
     border: 1px solid #2e5cff;
     border-radius: 12px;
     margin-left: 100px;
+    display: none;
   }
   nav .Btn2 {
     display: none;
@@ -580,7 +664,10 @@ nav .Btn2 {
     border: none;
     border-radius: 12px;
   }
-
+  .Burger {
+    margin-right: 20px;
+    background-color: transparent;
+  }
   /* Hero Section */
   .Hero {
     display: flex;
@@ -1086,5 +1173,50 @@ nav .Btn2 {
     border-radius: 40px;
     border: none;
     font-size: 13px;
+  }
+  /* Footer */
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6ff;
+  }
+  .footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: unset;
+  }
+  .FTcolumn h2 {
+    color: #172e80;
+  }
+  .FTcolumn p {
+    width: 300px;
+    color: #777777;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .FTcolumn li {
+    font-size: 15px;
+    list-style: none;
+    color: #172e80;
+    margin-top: 15px;
+  }
+  .FTcolumn small {
+    font-size: 15px;
+    color: #172e80;
+  }
+  .CopyRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #172e80;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .CopyRow p {
+    font-size: 15px;
+    font-weight: 500;
   }
 }

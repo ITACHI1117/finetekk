@@ -45,22 +45,13 @@ function Testemonials() {
             <img src={OutStar} alt="" />
           </div>
         </motion.div>
-        <motion.div
-          className="ArrBtns"
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          // animate={{ y: 50 }}
-          transition={{
-            duration: 1,
-            type: "tween",
-          }}
-        >
+        <div className="ArrBtns">
           <img className="upBtn" src={ArrowUp} alt="" />
           <p>1</p>
           <p>2</p>
           <p>3</p>
           <img className="downBtn" src={ArrowDownn} alt="" />
-        </motion.div>
+        </div>
       </div>
     </div>
   );
