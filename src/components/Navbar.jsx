@@ -7,13 +7,13 @@ function Navbar() {
         <h1>FineTekk</h1>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#Hero">Home</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#Services">About</a>
           </li>
           <li>
-            <a href="">FAQs</a>
+            <a href="#faqs">FAQs</a>
           </li>
           <li>
             <a href="">Contact Us</a>

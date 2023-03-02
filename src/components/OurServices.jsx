@@ -3,17 +3,55 @@ import arrow from "../assets/images/arrow.png";
 import pay from "../assets/images/pay.png";
 import save from "../assets/images/save.png";
 import invest from "../assets/images/invest.png";
+import { motion, transform } from "framer-motion";
 
 function OurServices() {
   return (
-    <div className="Services">
-      <h3>OUR SERVICES</h3>
-      <h1>What we offer</h1>
-      <p>
+    <div id="Services" className="Services">
+      <motion.h3
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 5 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 0.5,
+          type: "tween",
+        }}
+      >
+        OUR SERVICES
+      </motion.h3>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 5 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 0.5,
+          type: "tween",
+        }}
+      >
+        What we offer
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 5 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 0.5,
+          type: "tween",
+        }}
+      >
         We help individuals become more flexible and responsible with their
         finances and handle payments smooth and easy.{" "}
-      </p>
-      <div className="ServiceBoxes">
+      </motion.p>
+      <motion.div
+        className="ServiceBoxes"
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 5 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 0.5,
+          type: "tween",
+        }}
+      >
         <div className="serviceBox1">
           <h2>Easy Payment</h2>
           <p>
@@ -54,7 +92,7 @@ function OurServices() {
             <img src={save} alt="" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

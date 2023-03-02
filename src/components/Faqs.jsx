@@ -1,11 +1,21 @@
 import React from "react";
 import pana from "../assets/images/pana.png";
 import DropDown from "../assets/images/arrowDown.png";
+import { delay, motion } from "framer-motion";
 
 function Faqs() {
   return (
-    <div className="FaqsRow">
-      <div className="FaqsContainer">
+    <div id="faqs" className="FaqsRow">
+      <motion.div
+        className="FaqsContainer"
+        initial={{ opacity: 0.5, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 1,
+          type: "tween",
+        }}
+      >
         <div className="Faqs">
           <h1>FAQs</h1>
           <div className="faqsBox">
@@ -21,11 +31,20 @@ function Faqs() {
             <img src={DropDown} alt="" />
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="Pana">
+      <motion.div
+        className="Pana"
+        initial={{ opacity: 0.5, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 1,
+          type: "tween",
+        }}
+      >
         <img src={pana} alt="" />
-      </div>
+      </motion.div>
     </div>
   );
 }

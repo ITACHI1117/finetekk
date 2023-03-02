@@ -1,11 +1,31 @@
 import React from "react";
 import iPhone from "../assets/images/iPhone.png";
+import { delay, motion } from "framer-motion";
 
 function DownloadApp() {
   return (
     <div className="DownloadApp">
-      <img src={iPhone} alt="" />
-      <div className="guide">
+      <motion.img
+        src={iPhone}
+        alt=""
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 5 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 0.5,
+          type: "tween",
+        }}
+      />
+      <motion.div
+        className="guide"
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, duration: 5 }}
+        // animate={{ y: 50 }}
+        transition={{
+          duration: 0.5,
+          type: "tween",
+        }}
+      >
         <h1>Start the journey to reach your financial goals today.</h1>
         <div className="ListRow">
           <div className="NoLine">
@@ -46,7 +66,7 @@ function DownloadApp() {
         <div className="CenterButton">
           <button>Download Now</button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
