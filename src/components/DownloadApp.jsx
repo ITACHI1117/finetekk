@@ -1,24 +1,14 @@
 import React from "react";
 import iPhone from "../assets/images/iPhone.png";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function DownloadApp() {
   return (
     <div className="DownloadApp">
-      <motion.img
-        src={iPhone}
-        alt=""
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0, duration: 5 }}
-        // animate={{ y: 50 }}
-        transition={{
-          duration: 0.5,
-          type: "tween",
-        }}
-      />
+      <img src={iPhone} alt="" />
       <motion.div
         className="guide"
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0.5, y: 150 }}
         whileInView={{ opacity: 1, y: 0, duration: 5 }}
         // animate={{ y: 50 }}
         transition={{

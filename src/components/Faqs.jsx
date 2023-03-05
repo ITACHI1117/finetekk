@@ -1,15 +1,68 @@
-import React from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import pana from "../assets/images/pana.png";
 import DropDown from "../assets/images/arrowDown.png";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import gsap from "gsap";
 
 function Faqs() {
+  const [clicked, setClicked] = useState(false);
+  const [clicked2, setClicked2] = useState(false);
+  const [clicked3, setClicked3] = useState(false);
+  const app = useRef();
+
+  useLayoutEffect(() => {
+    if (clicked === true) {
+      const ctx = gsap.context(() => {
+        gsap.fromTo(
+          "#dt1",
+          {
+            y: -10,
+            opacity: 0,
+          },
+          { y: 0, opacity: 1, duration: 1, ease: "power1", display: "flex" }
+        );
+      }, app);
+      return () => {
+        ctx.revert();
+      };
+    }
+    if (clicked2 === true) {
+      const ctx = gsap.context(() => {
+        gsap.fromTo(
+          "#dt2",
+          {
+            y: -10,
+            opacity: 0,
+          },
+          { y: 0, opacity: 1, duration: 1, ease: "power1", display: "flex" }
+        );
+      }, app);
+      return () => {
+        ctx.revert();
+      };
+    }
+    if (clicked3 === true) {
+      const ctx = gsap.context(() => {
+        gsap.fromTo(
+          "#dt3",
+          {
+            y: -10,
+            opacity: 0,
+          },
+          { y: 0, opacity: 1, duration: 1, ease: "power1", display: "flex" }
+        );
+      }, app);
+      return () => {
+        ctx.revert();
+      };
+    }
+  });
   return (
-    <div id="faqs" className="FaqsRow">
+    <div id="faqs" className="FaqsRow" ref={app}>
       <motion.div
         className="FaqsContainer"
-        initial={{ opacity: 0.5, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0.5 }}
+        whileInView={{ opacity: 1 }}
         // animate={{ y: 50 }}
         transition={{
           duration: 1,
@@ -20,30 +73,48 @@ function Faqs() {
           <h1>FAQs</h1>
           <div className="faqsBox">
             <p>Is fintekk’s security guaranteed?</p>
-            <img src={DropDown} alt="" />
+            <img onClick={() => setClicked(!clicked)} src={DropDown} alt="" />
+          </div>
+          <div id="dt1" className="displayText">
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.{" "}
+            </p>
           </div>
           <div className="faqsBox">
             <p>How to activate Fintekk account</p>
-            <img src={DropDown} alt="" />
+            <img onClick={() => setClicked2(!clicked2)} src={DropDown} alt="" />
+          </div>
+          <div id="dt2" className="displayText">
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.{" "}
+            </p>
           </div>
           <div className="faqsBox">
             <p>What should i do if i forget my pin</p>
-            <img src={DropDown} alt="" />
+            <img onClick={() => setClicked3(!clicked3)} src={DropDown} alt="" />
+          </div>
+          <div id="dt3" className="displayText">
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.{" "}
+            </p>
           </div>
         </div>
       </motion.div>
 
       <motion.div
         className="Pana"
-        initial={{ opacity: 0.5, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0.5 }}
+        whileInView={{ opacity: 1 }}
         // animate={{ y: 50 }}
         transition={{
           duration: 1,
           type: "tween",
         }}
       >
-        <img src={pana} alt="" />
+        <img className="faqImg" src={pana} alt="" />
       </motion.div>
     </div>
   );

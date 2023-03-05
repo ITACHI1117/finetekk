@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
-import burger from "../assets/images/Burger.png";
+
 import gsap from "gsap";
 
 function Navbar() {
@@ -18,11 +18,11 @@ function Navbar() {
       const ctx = gsap.context(() => {
         // Target the two specific elements we have forwarded refs to
 
-        gsap.to("#box1", { rotation: 40, opacity: 1, duration: 1 });
+        gsap.to("#box1", { rotation: 50, opacity: 1, duration: 1 });
         gsap.to("#box2", {
-          y: -5,
-          x: 5,
-          rotation: -40,
+          y: -10,
+          x: 1,
+          rotation: -50,
           opacity: 1,
           duration: 1,
         });

@@ -1,15 +1,11 @@
-import React, { useState, useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import apple from "../assets/images/apple.png";
 import playStore from "../assets/images/playStore.png";
 import HeaderPic from "../assets/images/PictureFloatingCards.png";
-import { delay, motion } from "framer-motion";
 import gsap from "gsap";
 
 function HeroSection() {
-  const [reversed, setReversed] = useState(null);
-  const [count, setCount] = useState(0);
   const app = useRef();
-  const tl = useRef();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {

@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar {
   display: none;
@@ -11,6 +11,21 @@
 .NavBar {
   height: 70px;
   box-shadow: 0px 2px 8px rgba(46, 92, 255, 0.1);
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
 }
 
 nav {
@@ -141,10 +156,16 @@ nav .Btn2 {
   height: 100px;
   margin-top: 150px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   background-color: #fbfbfb;
 }
+.BrandMove {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Active User Trust */
 .UserTrust {
   display: flex;
@@ -213,7 +234,7 @@ nav .Btn2 {
   color: #2e5cff;
 }
 .serviceBox1 p {
-  text-align: start;
+  text-align: flex-left;
   width: 300px;
   font-size: 15px;
   color: #777777;
@@ -242,7 +263,7 @@ nav .Btn2 {
   color: #2e5cff;
 }
 .serviceBox2 p {
-  text-align: start;
+  text-align: left;
   width: 300px;
   font-size: 15px;
   color: #777777;
@@ -286,8 +307,8 @@ nav .Btn2 {
 .guide {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  text-align: start;
+  align-items: left;
+  text-align: left;
   margin-top: -150px;
 }
 .guide h1 {
@@ -312,7 +333,7 @@ nav .Btn2 {
 }
 .ListRow {
   margin-top: 20px;
-  text-align: start;
+  text-align: left;
   display: flex;
   margin-bottom: 20px;
 }
@@ -390,6 +411,18 @@ nav .Btn2 {
   cursor: pointer;
   margin-right: 10px;
 }
+.displayText {
+  background-color: white;
+  width: 450px;
+  height: 100px;
+  color: #172e80;
+  border-radius: 0 0 10px 10px;
+  padding: 5px;
+  display: none;
+}
+.displayText p {
+  font-size: 14px;
+}
 .Pana {
   width: 45%;
   padding: 50px;
@@ -429,15 +462,28 @@ nav .Btn2 {
   color: #172e80;
   font-size: 40px;
 }
+
 .TestBox {
-  width: 600px;
+  width: 100%;
   height: 200px;
-  border-radius: 20px;
   background-color: white;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  align-items: left;
   justify-content: center;
-  text-align: start;
+}
+.mySwiper {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: unset;
+}
+.TestemonRow {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  overflow: hidden;
 }
 .TestBox p {
   margin-left: 15px;
@@ -566,21 +612,101 @@ nav .Btn2 {
   font-size: 15px;
   font-weight: 500;
 }
+
+.itemimg {
+  min-height: 10rem;
+  min-width: 30rem;
+  padding: 40px;
+}
+.itemimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  pointer-events: none;
+}
+.inner-carousel {
+  display: flex;
+}
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
+
+.Small {
+  background-color: #172e80;
+  height: 200px;
+  width: 300px;
+  overflow: scroll;
+}
+.container {
+  width: 100vw;
+  height: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiperContain {
+  margin-left: 0px;
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+
+.swiper-button-prev {
+  rotate: 90deg;
+}
+.swiper-button-next {
+  rotate: 90deg;
+}
+
+.image-swiper-pagination {
+  width: 20px;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: white;
+}
+.image-swiper-pagination
+  span
+  .swiper-pagination-bullet
+  .swiper-pagination-bullet-active {
+  background-color: #172e80;
+}
+.image-swiper-pagination-bullet {
+  background-color: #172e80;
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.designer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
 @media screen and (max-width: 1000px) {
   * {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
+
   .NavBar {
     width: 100vw;
     height: 60px;
-    box-shadow: 0px 2px 8px rgba(46, 92, 255, 0.1);
   }
 
   nav {
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: row;
-    padding-top: 15px;
+    padding-top: 5px;
     width: 100vw;
     align-items: center;
     justify-content: space-between;
@@ -619,22 +745,21 @@ nav .Btn2 {
   .box1 {
     width: 30px;
     height: 4px;
-    background-color: #4a8edc;
+    background-color: #172e80;
     border-radius: 10px;
   }
   .box2 {
-    margin-right: 10px;
     border-radius: 10px;
     margin-top: 3px;
     margin-bottom: 3px;
     width: 30px;
     height: 4px;
-    background-color: #4adc7c;
+    background-color: #172e80;
   }
   .box3 {
     width: 30px;
     height: 4px;
-    background-color: #4a8edc;
+    background-color: #172e80;
     border-radius: 10px;
   }
 
@@ -751,17 +876,27 @@ nav .Btn2 {
 
   /* Brands */
   .Brands {
+    width: 100vw;
     height: 100px;
     margin-top: 150px;
+    overflow: scroll;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fbfbfb;
     overflow-x: hidden;
   }
-  .Brands img {
-    width: 100px;
-    margin-left: 50px;
+  .BrandMove {
+    width: 900px;
+    background-color: transparent;
+    height: 90%;
+    overflow-x: unset;
+    padding: 0px;
+    /* transition: 2s; */
+    /* background-color: #172e80; */
+  }
+  .BrandMove img {
+    margin-left: 30px;
   }
   /* Active User Trust */
   .UserTrust {
@@ -829,12 +964,13 @@ nav .Btn2 {
     text-align: left;
     background-color: #f4f6ff;
   }
+
   .serviceBox1 h2 {
     font-size: 30px;
     color: #2e5cff;
   }
   .serviceBox1 p {
-    text-align: start;
+    text-align: left;
     width: 300px;
     font-size: 15px;
     color: #777777;
@@ -844,7 +980,7 @@ nav .Btn2 {
   .serviceBox1 a {
     display: flex;
     justify-content: space-around;
-    width: 80px;
+    width: 120px;
     text-decoration: none;
     color: #2e5cff;
   }
@@ -864,7 +1000,7 @@ nav .Btn2 {
     color: #2e5cff;
   }
   .serviceBox2 p {
-    text-align: start;
+    text-align: left;
     width: 300px;
     font-size: 15px;
     color: #777777;
@@ -874,7 +1010,7 @@ nav .Btn2 {
   .serviceBox2 a {
     display: flex;
     justify-content: space-around;
-    width: 80px;
+    width: 120px;
     text-decoration: none;
     color: #2e5cff;
   }
@@ -935,7 +1071,7 @@ nav .Btn2 {
   }
   .ListRow {
     margin-top: 20px;
-    text-align: start;
+    text-align: left;
     display: flex;
     margin-bottom: 20px;
   }
@@ -990,7 +1126,7 @@ nav .Btn2 {
     background-color: #2e5cff;
   }
   .Faqs {
-    width: 95%;
+    width: 100%;
     height: 500px;
     margin-top: 0px;
     display: flex;
@@ -1015,13 +1151,25 @@ nav .Btn2 {
     color: white;
     font-size: 15px;
   }
+  .displayText {
+    background-color: white;
+    width: 80vw;
+    height: 100px;
+    color: #172e80;
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+    display: none;
+  }
+  .displayText p {
+    font-size: 14px;
+  }
   .faqsBox img {
     cursor: pointer;
     margin-right: 10px;
   }
   .Pana {
     width: 100vw;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1042,12 +1190,27 @@ nav .Btn2 {
     justify-content: center;
     width: 100vw;
     height: 900px;
-    background-color: #f4f6ff;
   }
-
+  .TestemonRow {
+    width: 80vw;
+    height: 300px;
+    overflow-x: unset;
+    margin-top: 20px;
+  }
+  .Move {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 100%;
+    margin-left: 0px;
+    overflow-x: scroll;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172e80;
+  }
   .Test {
     height: 900px;
-    width: 1300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1065,16 +1228,17 @@ nav .Btn2 {
     padding-top: 20px;
   }
   .TestBox {
-    margin-top: 20px;
-    width: 90vw;
-    height: 300px;
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
     background-color: white;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    cursor: grab;
   }
+
   .TestBox p {
     margin-left: 15px;
     width: 90%;
@@ -1093,21 +1257,36 @@ nav .Btn2 {
     margin-top: 20px;
   }
   .ArrBtns {
-    width: 100vw;
+    width: 75vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
   }
-  .upBtn {
+  .image-swiper-button-prev {
+    rotate: -90deg;
+  }
+  .image-swiper-button-next {
+    rotate: -90deg;
+  }
+
+  .image-swiper-pagination {
+    width: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    color: white;
+  }
+  /* .upBtn {
     rotate: -90deg;
     margin-right: 10px;
   }
   .downBtn {
     rotate: -90deg;
     margin-left: 10px;
-  }
+  } */
   .ArrBtns p {
     margin: 10px;
   }
@@ -1128,12 +1307,12 @@ nav .Btn2 {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: left;
     padding: 20px;
     justify-content: center;
   }
   .Sign h1 {
-    text-align: start;
+    text-align: left;
     width: 75vw;
     font-size: 40px;
     font-weight: 700px;
@@ -1212,11 +1391,25 @@ nav .Btn2 {
     align-items: center;
     justify-content: space-around;
     color: #172e80;
+    padding-left: 20px;
     margin-top: 100px;
     margin-bottom: 50px;
   }
   .CopyRow p {
     font-size: 15px;
     font-weight: 500;
+  }
+  .mySwiper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #2e5cff;
+  }
+  .swiperContain {
+    margin-left: 0px;
+    display: flex;
+    width: 400px;
+    height: 700px;
   }
 }

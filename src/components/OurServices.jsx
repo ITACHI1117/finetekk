@@ -3,7 +3,7 @@ import arrow from "../assets/images/arrow.png";
 import pay from "../assets/images/pay.png";
 import save from "../assets/images/save.png";
 import invest from "../assets/images/invest.png";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 
 function OurServices() {
   return (
@@ -57,9 +57,9 @@ function OurServices() {
           <p>
             Stress-free payment for all transactions that you do at any time.
           </p>
-          <a href="#">
+          <a href="#Services">
             Read More
-            <img src={arrow} alt="" />
+            <img className="Arrow" src={arrow} alt="" />
           </a>
           <div className="serviceImg">
             <img src={pay} alt="" />
@@ -70,9 +70,9 @@ function OurServices() {
           <p>
             Grow your money by investing in pre-vetted investment opportunities.{" "}
           </p>
-          <a href="#">
+          <a href="#Services">
             Read More
-            <img src={arrow} alt="" />
+            <img className="Arrow" src={arrow} alt="" />
           </a>
           <div className="serviceImg">
             <img src={invest} alt="" />
@@ -84,9 +84,9 @@ function OurServices() {
             Build a dedicated savings faster on your terms automatically or
             manually.{" "}
           </p>
-          <a href="#">
+          <a href="#Services">
             Read More
-            <img src={arrow} alt="" />
+            <img className="Arrow" src={arrow} alt="" />
           </a>
           <div className="serviceImg">
             <img src={save} alt="" />
