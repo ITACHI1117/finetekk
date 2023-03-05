@@ -1,21 +1,16 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 
 import gsap from "gsap";
 
 function Navbar() {
   const app = useRef();
-  const tl = useRef();
   let [click2, setClick2] = useState(false);
 
   useLayoutEffect(() => {
-    if (click2 == true) {
+    if (click2 === true) {
       console.log(click2);
-      let body = document.querySelector("body");
-      // let showMenu = document.getElementById("shownMenu");
-      body.style.overflow = "hidden";
-      // showMenu.style.display = "none";
 
-      const ctx = gsap.context(() => {
+      gsap.context(() => {
         // Target the two specific elements we have forwarded refs to
 
         gsap.to("#box1", { rotation: 50, opacity: 1, duration: 1 });
@@ -27,28 +22,17 @@ function Navbar() {
           duration: 1,
         });
         gsap.to("#box3", { opacity: 0 });
-        // gsap.fromTo(
-        //   showMenu,
-        //   { y: -500, opacity: 0.5 },
-        //   {
-        //     y: 0,
-        //     duration: 1,
-        //     opacity: 1,
-        //     borderRadius: "0%",
-        //     display: "flex",
-        //   }
-        // );
       }, app);
     }
   }, [click2]);
 
   useLayoutEffect(() => {
-    if (click2 == false) {
+    if (click2 === false) {
       let body = document.querySelector("body");
       let showMenu = document.getElementById("shownMenu");
       console.log("clicked2");
       body.style.overflowY = "scroll";
-      const ctx = gsap.context(() => {
+      gsap.context(() => {
         // Target the two specific elements we have forwarded refs to
 
         gsap.to("#box1", { rotation: 0, opacity: 1, duration: 1 });
@@ -90,7 +74,7 @@ function Navbar() {
             <a href="#faqs">FAQs</a>
           </li>
           <li>
-            <a href="">Contact Us</a>
+            <a href="#footerBox">Contact Us</a>
           </li>
         </ul>
         <div>

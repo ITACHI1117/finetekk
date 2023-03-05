@@ -11,6 +11,10 @@ function Faqs() {
   const app = useRef();
 
   useLayoutEffect(() => {
+    const dt1 = document.getElementById("dt1");
+    // dt1.onmouseleave();
+    console.log(dt1);
+    dt1.className = "displayText active";
     if (clicked === true) {
       const ctx = gsap.context(() => {
         gsap.fromTo(
@@ -27,6 +31,7 @@ function Faqs() {
       };
     }
     if (clicked2 === true) {
+      dt1.style.display = "none";
       const ctx = gsap.context(() => {
         gsap.fromTo(
           "#dt2",
@@ -36,6 +41,7 @@ function Faqs() {
           },
           { y: 0, opacity: 1, duration: 1, ease: "power1", display: "flex" }
         );
+        // gsap.to(dt1, { display: "none" });
       }, app);
       return () => {
         ctx.revert();

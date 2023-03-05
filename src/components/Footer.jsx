@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footerBox">
+    <div id="footerBox" className="footerBox">
       <div className="footer">
         <div className="FTcolumn">
           <h2>Fintekk</h2>

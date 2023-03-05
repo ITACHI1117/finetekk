@@ -6,6 +6,7 @@ import ArrowDownn from "../assets/images/TArrowDown.png";
 import { motion } from "framer-motion";
 import TestData from "../TestData";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 import { EffectCoverflow, Navigation, Pagination, A11y } from "swiper";
 
@@ -63,7 +64,7 @@ function Testemonials() {
               "--swiper-pagination-bullet-size": "20px",
               "--swiper-theme-color": "green",
             }}
-            // className="mySwiper"
+            className="mySwiper"
           >
             {TestData.map((test) => {
               return (
